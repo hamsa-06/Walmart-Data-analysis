@@ -15,18 +15,21 @@ This project is ideal for those who are starting their journey in data analysis 
 
 **1. Database Setup**
     **Database Creation** : The project starts by creating a database named walmart.
-    **Table Creation** : A table named sales is created to store the sales data. The table structure includes columns for invoice_id,Branch, City,category,unit_price,quantity,date,time,payment_method,rating,rating_margin
-**CREATE DATABASE Walmart;
-Use Walmart;
-Create table sales(
- invoice_id int,
- Branch varchar(30),
- City varchar(40),
- category varchar(40),
- unit_price double,
- quantity int,
- date date,
- time time,
- payment_method varchar(30),
- rating float,
- rating_margin float);**
+    **Table Creation** : A table named **sales** is created to store the sales data. The table structure includes columns for invoice_id,Branch, City,category,unit_price,quantity,date,time,payment_method,rating,rating_margin
+         CREATE DATABASE Walmart;
+         Use Walmart;
+         Create table sales(
+          invoice_id int,
+          Branch varchar(30),
+          City varchar(40),
+          category varchar(40),
+          unit_price double,
+          quantity int,
+          date date,
+          time time,
+          payment_method varchar(30),
+          rating float,
+          rating_margin float);
+**2. Data Exploration & Cleaning**
+      **Check for Duplicates** : Ensure that there are no duplicate records that might skew your analysis.
+      
