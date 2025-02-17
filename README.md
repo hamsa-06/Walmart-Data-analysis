@@ -31,5 +31,9 @@ This project is ideal for those who are starting their journey in data analysis 
           rating float,
           rating_margin float);
 **2. Data Exploration & Cleaning**
-      **Check for Duplicates** : Ensure that there are no duplicate records that might skew your analysis.
-      
+      **Check for Duplicates** 
+          SELECT DISTINCT invoice_id,COUNT(*) FROM walmart GROUP BY invoice_id HAVING COUNT(*) > 1;
+       **Remove Dollar Sign from Unit Price**
+         UPDATE sales
+         SET unit_price = REPLACE(unit_price,'$','')
+         WHERE unit_price LIKE '$%';
